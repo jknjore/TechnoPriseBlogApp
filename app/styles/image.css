@@ -1,0 +1,22 @@
+.blogImagePreview,.blogImageView
+{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.blogImagePreview
+{
+    max-height: 150px;
+}
+
+.blogImageView
+{
+    max-height: 350px;
+}
+
+
+.logo
+{
+    width: 100px;
+    height: 50px;
+}
