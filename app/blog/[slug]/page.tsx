@@ -5,6 +5,7 @@ import Link from 'next/link';
 import blogData from '../../helpers/blogData'; // Import sample blog data
 import '../../styles/image.css'
 
+//Dynamic route to handle /blog/{slug}
 const PostPage = ({ params }) => {
     const { slug } = useParams()
 
@@ -24,7 +25,7 @@ const PostPage = ({ params }) => {
       <div className="bg-white rounded-lg shadow-md p-6 postdata">
       <h1 className="text-3xl font-bold mb-2">{post.title}</h1> 
       <p className="text-gray-600 mb-2">{post.date} <small style={{marginLeft:"50px"}}>5 min Read</small></p> <br />
-      <img src={post.image} className='blogImageView'/><br />
+      <img src={post.image} className='blogImageView' alt='Image Missing'/><br />
         
         
         <p className="text-gray-800">{post.content}</p>

@@ -1,0 +1,1 @@
+//Its recommended to create an interace to contain expected data format for the blogs

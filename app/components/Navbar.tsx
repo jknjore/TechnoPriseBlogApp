@@ -6,7 +6,7 @@ import Search from './lookup/Search';
 import { getAllPosts } from '../helpers/getPosts';
 import { Button } from 'react-bootstrap';
 
-
+//Implemented a top bar for the web app. Contains the  logo, search bar
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,22 +14,21 @@ const Navbar = () => {
     <nav className="bg-gray-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
+          <div className="flex items-center" >
             <div className="flex-shrink-0">
               <img src='/images/Blog-Logo.png' className='logo' />
             </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4" style={{marginLeft:"500px"}}>
-                <Link href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                  
-                    Blogs
-                </Link>
+            <div className="hidden md:block" >
+              <div className="ml-10 flex items-baseline space-x-4" style={{marginLeft:"300px"}}>
+              <Link href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                      Blogs
+            </Link>
 
-                <Search posts={getAllPosts()} />
+            <Search posts={getAllPosts()} />
 
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                Create Blog Post
-              </button>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Create Blog Post
+            </button>
               
               </div>
             </div>
@@ -73,6 +72,7 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
+
         </div>
       </div>
 
